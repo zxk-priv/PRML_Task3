@@ -89,6 +89,7 @@ class StochasticGradientDescentLogisticRegression:
                 all_labels += len(gt_label)
         test_error = 1 - correct_labels / all_labels
         print(f"Test Error Rate: {test_error:.4f}")
+        return test_error
 
     def plot_results(self, train_losses, train_errors, test_errors):
         plt.figure(figsize=(12, 5))
